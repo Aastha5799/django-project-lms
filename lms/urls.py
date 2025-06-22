@@ -22,4 +22,6 @@ urlpatterns = [
     path('', include('core.urls')), 
     path('accounts/',include('accounts.urls')),
     path('accounts/',include('django.contrib.auth.urls')),
+    path('api-auth/', include('rest_framework.urls')),
+    path('api/', include('lmsapi.urls'))
     ] # Include the core app's URLs
